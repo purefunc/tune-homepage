@@ -8,6 +8,7 @@ import { Wrapper, Grid, below, media } from "../styles"
 import Carousel from "react-multi-carousel"
 import SEO from "../components/seo"
 import { useLanguage } from "../global/language"
+import { english, thai } from "../translation/index.yml"
 
 import "react-multi-carousel/lib/styles.css"
 
@@ -44,6 +45,9 @@ const IndexPage = ({ data }) => {
   const { heroImg, allMarkdownRemark } = data
   const projects = allMarkdownRemark.edges
   const { lang } = useLanguage()
+  const services = lang === "th" ? thaiServices : englishServices
+
+  const currentLanguage = lang === "th" ? thai : english
 
   return (
     <>

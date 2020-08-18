@@ -5,6 +5,8 @@ import Img from "gatsby-image"
 import SEO from "../components/seo"
 import Icon from "../components/Icon"
 import { Wrapper, below, Cols } from "../styles"
+import { useLanguage } from "../global/language"
+import { english, thai } from "../translation/contact.yml"
 
 const ContactPage: FC = ({ data }) => (
   <>

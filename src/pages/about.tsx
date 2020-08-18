@@ -4,6 +4,8 @@ import styled from "styled-components"
 import Img from "gatsby-image"
 import SEO from "../components/seo"
 import { Wrapper, Cols } from "../styles"
+import { useLanguage } from "../global/language"
+import { english, thai } from "../translation/about.yml"
 
 const AboutPage: React.FC = ({ data }) => (
   <>
