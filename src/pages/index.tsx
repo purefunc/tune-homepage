@@ -45,9 +45,6 @@ const IndexPage = ({ data }) => {
   const { heroImg, allMarkdownRemark } = data
   const projects = allMarkdownRemark.edges
   const { lang } = useLanguage()
-  const services = lang === "th" ? thaiServices : englishServices
-
-  const currentLanguage = lang === "th" ? thai : english
 
   return (
     <>
