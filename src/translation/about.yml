@@ -1,0 +1,11 @@
+english:
+  title:
+  services:
+    - "service 1"
+    - "service 2"
+
+thai:
+  title: THAI
+  services:
+    - "thai 1"
+    - "thai 2"
